@@ -29,4 +29,3 @@ function openNavbar() {
 }
 
 button.addEventListener('click', openNavbar)
-
