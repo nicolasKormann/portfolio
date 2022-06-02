@@ -329,7 +329,7 @@ section#courses li.courses-items img {
   box-shadow: 25px 30px 30px -30px rgba(0, 0, 0, 0.233);  
 }
 
-section#courses li.courses-items img[src="/images/rocketseat.svg"] {
+section#courses li.courses-items img[src="images/rocketseat.svg"] {
   background-color: black;
   padding: 10px;
   max-width: 120px;
