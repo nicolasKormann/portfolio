@@ -528,8 +528,9 @@ section#projects article.project a + div {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  margin-left: -80px;  
+  
   position: relative;
+  left: -80px;
   z-index: 2;
 }
 
@@ -880,6 +881,7 @@ section#projects article.project img {
 }
 
 section#projects article.project a + div {
+  position: static;
   width: 32rem;
   padding: 10px;
 
