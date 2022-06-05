@@ -17,7 +17,7 @@ moon.addEventListener('click', toggleTheme)
 sun.addEventListener('click', toggleTheme)
 
 /* ---------- OPEN MENU - MOBILE ----------- */
-let button = document.querySelector('#open-menu')
+let openMenu = document.querySelector('#checkbox-menu')
 
 function openNavbar() {
   let myLinks = document.getElementById('myLinks')
@@ -28,4 +28,4 @@ function openNavbar() {
   }
 }
 
-button.addEventListener('click', openNavbar)
+openMenu.addEventListener('click', openNavbar)

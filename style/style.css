@@ -776,6 +776,7 @@ header#mobile-header div.logo p {
 
 header#mobile-header #myLinks {
   display: none;
+  transition: all 3500ms ease;
 }
 
 .lightmode header#mobile-header #links-mobile a {
@@ -787,25 +788,14 @@ header#mobile-header #myLinks {
   text-decoration: none;
   font-size: 1.6rem;  
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 700;  
 }
 
 #mobile-header #myLinks .links a:hover,
 #mobile-header #myLinks .links a:focus  {
   color: var(--primary);
   transition: all 350ms ease;
-}
- 
-  header#mobile-header button {
-    background: none;
-    border: none;
-    cursor: pointer;   
-    
-    display: block;
-    position: absolute;
-    right: 18px;
-    top: 18px;
-  }
+}  
 
   header#mobile-header #links-mobile {
     padding-block: 50px;
@@ -830,6 +820,61 @@ header#mobile-header #myLinks {
     fill: var(--fourthy);
   }
 
+  #checkbox-menu {
+    position: absolute;
+    opacity: 0;       
+  }
+  
+  label {
+    cursor: pointer;
+    
+    display: block;
+    height: 22px;
+    width: 30px; 
+    position: absolute;   
+    top: 22px;
+    right: 20px;
+  }
+  
+  label span {
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: var(--zero);
+    border-radius: 30px;
+    transition: 0.25s ease-in-out;
+  }
+
+  .lightmode label span {
+    background-color: var(--fourthy);
+  }
+  
+  label span:nth-child(1) {
+    top: 0;
+  }
+  
+  label span:nth-child(2) {
+    top: 8px;
+  }
+  
+  label span:nth-child(3) {
+    top: 16px;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px
+  }
 
 /* ---------- HOME ----------- */
   section#home div#home-container {
